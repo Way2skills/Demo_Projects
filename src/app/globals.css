@@ -1,26 +1,89 @@
+
 @import "tailwindcss";
 
+/* GLOBAL COLORS */
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --cream: #F6F3EE;
+  --white: #FFFFFF;
+  --espresso: #29231F;
+  --walnut: #4A3528;
+  --taupe: #756B62;
+  --border: #DDD5CC;
+  --brass: #A88955;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+/* GLOBAL SETTINGS */
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 90px;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
+  margin: 0;
+  background: var(--white);
+  color: var(--espresso);
   font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* ACCESSIBILITY */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* NEOLEN Category Animation */
+
+@keyframes categoryFadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(35px) scale(0.96);
+  }
+
+  70% {
+    opacity: 1;
+    transform: translateY(-3px) scale(1.01);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.category-card {
+  opacity: 0;
+  animation: categoryFadeUp 0.85s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.category-heading {
+  animation: categoryFadeUp 0.8s ease-out both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .category-card,
+  .category-heading {
+    opacity: 1;
+    animation: none;
+  }
 }
