@@ -1,0 +1,212 @@
+.scroll-reveal-section.shop-by-who-section .scroll-reveal-card {
+  transition-duration: 1200ms;
+  transition-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.scroll-reveal-section.shop-by-who-section[data-reveal-enabled="true"][data-reveal-state="waiting"]
+  .scroll-reveal-card {
+  opacity: 0;
+  transform: translate3d(0, 40px, 0);
+}
+
+.scroll-reveal-section.shop-by-who-section[data-reveal-enabled="true"][data-reveal-state="waiting"]:not([data-reveal-ready="true"])
+  .scroll-reveal-card {
+  transition: none;
+}
+
+.home-style-reveal[data-reveal-enabled="true"][data-reveal-state="waiting"]
+  .category-carousel-card.scroll-reveal-card {
+  transform: translate3d(0, 16px, 0) scale(0.98);
+}
+
+.shop-by-who-section .watch-by-who-card {
+  isolation: isolate;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.shop-by-who-section .watch-by-who-card:focus-visible {
+  outline: 2px solid #a77b52;
+  outline-offset: 3px;
+}
+
+.shop-by-who-section .watch-by-who-image {
+  transition: filter 900ms ease;
+}
+
+.shop-by-who-section .watch-by-who-card:is(:hover, :focus-visible, :active)
+  .watch-by-who-image {
+  filter: brightness(1.07) saturate(1.04);
+}
+
+.shop-by-who-section .watch-by-who-dial-reveal {
+  position: absolute;
+  z-index: 2;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 180ms ease;
+}
+
+.shop-by-who-section
+  .watch-by-who-card:is(:hover, :focus-visible, :active)
+  .watch-by-who-dial-reveal {
+  opacity: 1;
+}
+
+.shop-by-who-section .watch-by-who-dial-orbit,
+.shop-by-who-section .watch-by-who-dial-markings {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 130%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  transform: translate(-50%, -50%) scale(0.08);
+  transition: transform 900ms cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+
+.shop-by-who-section .watch-by-who-dial-orbit {
+  border: 1px solid rgba(248, 226, 184, 0.76);
+  background: radial-gradient(
+    circle,
+    rgba(255, 242, 211, 0.14) 0%,
+    rgba(215, 185, 122, 0.1) 54%,
+    rgba(215, 185, 122, 0) 70%
+  );
+  box-shadow:
+    0 0 24px 2px rgba(215, 185, 122, 0.35),
+    inset 0 0 20px rgba(248, 226, 184, 0.14);
+}
+
+.shop-by-who-section .watch-by-who-dial-markings {
+  background: repeating-conic-gradient(
+    from 0deg,
+    rgba(248, 226, 184, 0.8) 0deg 0.55deg,
+    transparent 0.55deg 30deg
+  );
+  -webkit-mask-image: radial-gradient(
+    circle,
+    transparent 0 78%,
+    #000 79% 82%,
+    transparent 83%
+  );
+  mask-image: radial-gradient(
+    circle,
+    transparent 0 78%,
+    #000 79% 82%,
+    transparent 83%
+  );
+  opacity: 0;
+  transition:
+    transform 900ms cubic-bezier(0.2, 0.7, 0.2, 1) 100ms,
+    opacity 350ms ease 100ms;
+}
+
+.shop-by-who-section .watch-by-who-dial-hand {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 1px;
+  height: 34%;
+  border-radius: 999px;
+  background: linear-gradient(
+    to bottom,
+    #fff5d8 0%,
+    rgba(215, 185, 122, 0.92) 72%,
+    transparent 100%
+  );
+  box-shadow: 0 0 7px rgba(248, 226, 184, 0.55);
+  opacity: 0;
+  transform: rotate(-35deg);
+  transform-origin: 50% 0;
+  transition:
+    transform 950ms cubic-bezier(0.18, 0.72, 0.25, 1) 100ms,
+    opacity 250ms ease 100ms;
+}
+
+.shop-by-who-section
+  .watch-by-who-card:is(:hover, :focus-visible, :active)
+  .watch-by-who-dial-orbit,
+.shop-by-who-section
+  .watch-by-who-card:is(:hover, :focus-visible, :active)
+  .watch-by-who-dial-markings {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.shop-by-who-section
+  .watch-by-who-card:is(:hover, :focus-visible, :active)
+  .watch-by-who-dial-markings,
+.shop-by-who-section
+  .watch-by-who-card:is(:hover, :focus-visible, :active)
+  .watch-by-who-dial-hand {
+  opacity: 0.9;
+}
+
+.shop-by-who-section
+  .watch-by-who-card:is(:hover, :focus-visible, :active)
+  .watch-by-who-dial-hand {
+  transform: rotate(310deg);
+}
+
+.shop-by-who-section .watch-by-who-card-title {
+  position: relative;
+  display: inline-block;
+  text-shadow: 0 1px 5px rgba(24, 16, 10, 0.2);
+}
+
+.shop-by-who-section .watch-by-who-card-title::after {
+  position: absolute;
+  inset: 0;
+  color: transparent;
+  background: linear-gradient(
+    108deg,
+    transparent 37%,
+    rgba(255, 247, 224, 0.95) 48%,
+    rgba(215, 185, 122, 0.92) 52%,
+    transparent 64%
+  );
+  background-position: 100% 0;
+  background-size: 240% 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  content: attr(data-title);
+  opacity: 0;
+  pointer-events: none;
+  transition:
+    background-position 900ms ease 280ms,
+    opacity 250ms ease 280ms;
+}
+
+.shop-by-who-section
+  .watch-by-who-card:is(:hover, :focus-visible, :active)
+  .watch-by-who-card-title::after {
+  background-position: 0 0;
+  opacity: 0.9;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .shop-by-who-section .watch-by-who-image,
+  .shop-by-who-section .watch-by-who-dial-reveal,
+  .shop-by-who-section .watch-by-who-dial-orbit,
+  .shop-by-who-section .watch-by-who-dial-markings,
+  .shop-by-who-section .watch-by-who-dial-hand,
+  .shop-by-who-section .watch-by-who-card-title::after {
+    transition: none;
+  }
+
+  .shop-by-who-section
+    .watch-by-who-card:is(:hover, :focus-visible, :active)
+    .watch-by-who-dial-orbit,
+  .shop-by-who-section
+    .watch-by-who-card:is(:hover, :focus-visible, :active)
+    .watch-by-who-dial-markings {
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+  .shop-by-who-section
+    .watch-by-who-card:is(:hover, :focus-visible, :active)
+    .watch-by-who-dial-hand {
+    transform: rotate(40deg);
+  }
+}

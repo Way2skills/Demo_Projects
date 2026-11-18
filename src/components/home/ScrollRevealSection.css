@@ -1,0 +1,51 @@
+.scroll-reveal-section .scroll-reveal-heading,
+.scroll-reveal-section .scroll-reveal-card {
+  opacity: 1;
+  transform: none;
+  transition:
+    opacity 800ms cubic-bezier(0.2, 0.7, 0.2, 1),
+    transform 800ms cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+
+.scroll-reveal-section .scroll-reveal-card {
+  transition-delay: var(--scroll-reveal-delay, 800ms);
+}
+
+.scroll-reveal-section.home-scroll-reveal .scroll-reveal-heading,
+.scroll-reveal-section.home-scroll-reveal .scroll-reveal-card {
+  transition-duration: 1100ms;
+  transition-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.scroll-reveal-section.home-scroll-reveal .scroll-reveal-card {
+  transition-delay: var(--scroll-reveal-delay, 0ms);
+}
+
+.scroll-reveal-section.home-brand-marquee[data-reveal-enabled="true"][data-reveal-state="waiting"]
+  .brand-marquee-track {
+  animation-play-state: paused;
+}
+
+.scroll-reveal-section[data-reveal-state="static"] .scroll-reveal-heading,
+.scroll-reveal-section[data-reveal-state="static"] .scroll-reveal-card {
+  opacity: 1;
+  transform: none;
+  transition: none;
+}
+
+.scroll-reveal-section[data-reveal-enabled="true"][data-reveal-state="waiting"]
+  .scroll-reveal-heading,
+.scroll-reveal-section[data-reveal-enabled="true"][data-reveal-state="waiting"]
+  .scroll-reveal-card {
+  opacity: 0;
+  transform: translate3d(0, 16px, 0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .scroll-reveal-section .scroll-reveal-heading,
+  .scroll-reveal-section .scroll-reveal-card {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+}

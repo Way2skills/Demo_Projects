@@ -1,0 +1,35 @@
+@keyframes contact-hero-reveal {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 12px, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.contact-hero-title {
+  animation: contact-hero-reveal 800ms cubic-bezier(0.2, 0.7, 0.2, 1) both;
+}
+
+.contact-hero-subtitle {
+  animation: contact-hero-reveal 800ms cubic-bezier(0.2, 0.7, 0.2, 1) 120ms both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .contact-hero-title,
+  .contact-hero-subtitle {
+    animation: none;
+  }
+}
+
+@media (scripting: none) {
+  .contact-page .scroll-reveal-section[data-reveal-state="waiting"] .scroll-reveal-heading,
+  .contact-page .scroll-reveal-section[data-reveal-state="waiting"] .scroll-reveal-card {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}

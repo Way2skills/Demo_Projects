@@ -1,26 +1,51 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  color-scheme: light;
+  --page-background: #F5F2EC;
+  --surface-warm-white: #FBFAF7;
+  --surface-light-beige: #EEEAE2;
+  --text-warm-charcoal: #35332F;
+  --text-muted-warm-grey: #6D6961;
+  --border-warm-stone: #DED8CD;
+  --accent-muted-champagne: #9B8055;
+  --background: var(--page-background);
+  --foreground: var(--text-warm-charcoal);
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-surface-warm-white: var(--surface-warm-white);
+  --color-surface-light-beige: var(--surface-light-beige);
+  --color-text-muted-warm-grey: var(--text-muted-warm-grey);
+  --color-border-warm-stone: var(--border-warm-stone);
+  --color-accent-muted-champagne: var(--accent-muted-champagne);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+}
+
+@keyframes watch-wishlist-heart-fill {
+  0% {
+    transform: scale(0.78);
+  }
+
+  65% {
+    transform: scale(1.14);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .watch-wishlist-heart-fill {
+    animation: watch-wishlist-heart-fill 280ms cubic-bezier(0.2, 0.8, 0.2, 1);
+  }
 }
