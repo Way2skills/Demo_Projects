@@ -111,9 +111,3 @@ The Apps Script source is maintained separately and is not included in this repo
 
 Google-side deployment permissions, the live response format, and actual email delivery cannot be verified from this repository alone. Confirm those settings with the deployment owner before relying on live customer email delivery. No test email is sent by the setup commands.
 
-## Important Notes
-
-- Shopping bag and wishlist data are stored in the user's browser; this project does not provide a backend order system.
-- Checkout is for demonstration and does not process payments.
-- Product and watchmaker catalogue information is provided for showcase purposes and does not establish official brand partnerships, authorized-dealer status, or confirmed inventory.
-- The app-local README is the setup guide for the Next.js application; this root README consolidates its setup and integration instructions with the project overview.
