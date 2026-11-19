@@ -1,0 +1,608 @@
+
+/* =====================================
+   BABYHUNT - WEBSITE WIDE ANIMATIONS
+===================================== */
+
+@keyframes babyPageEnter {
+  from {
+    opacity: 0;
+    transform: translateY(22px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes babyFadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes babySlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(28px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Homepage */
+.hero-content {
+  animation: babySlideUp 0.9s ease both;
+}
+
+.hero-bubble {
+  animation: babyFadeIn 1.2s ease both;
+}
+
+.benefit {
+  animation: babySlideUp 0.7s ease both;
+}
+
+.benefit:nth-child(2) { animation-delay: 0.1s; }
+.benefit:nth-child(3) { animation-delay: 0.2s; }
+.benefit:nth-child(4) { animation-delay: 0.3s; }
+
+.section-heading {
+  animation: babySlideUp 0.7s ease both;
+}
+
+/* Category cards */
+.category-card {
+  animation: babySlideUp 0.7s ease both;
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.category-card:nth-child(2) { animation-delay: 0.1s; }
+.category-card:nth-child(3) { animation-delay: 0.2s; }
+.category-card:nth-child(4) { animation-delay: 0.3s; }
+
+.category-card img {
+  transition: transform 0.6s ease;
+}
+
+.category-card:hover img {
+  transform: scale(1.07);
+}
+
+/* Promo */
+.promo-banner {
+  animation: babyPageEnter 0.8s ease both;
+}
+
+/* Products */
+.product-card {
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.product-image img {
+  transition: transform 0.55s ease;
+}
+
+.wishlist-button {
+  transition: transform 0.25s ease, color 0.25s ease;
+}
+
+.wishlist-button:hover {
+  transform: scale(1.12);
+}
+
+/* About */
+.about-content {
+  animation: babySlideUp 0.8s ease both;
+}
+
+.about-image {
+  animation: babyPageEnter 0.9s ease both;
+}
+
+.about-image img {
+  transition: transform 0.7s ease;
+}
+
+.about-image:hover img {
+  transform: scale(1.05);
+}
+
+/* Newsletter */
+.newsletter {
+  animation: babyFadeIn 0.8s ease both;
+}
+
+/* Navigation */
+.nav a {
+  transition: color 0.25s ease, transform 0.25s ease;
+}
+
+.nav a:hover {
+  transform: translateY(-2px);
+}
+
+.logo {
+  transition: transform 0.3s ease;
+}
+
+.logo:hover {
+  transform: translateY(-2px);
+}
+
+/* Buttons */
+button,
+.primary-button,
+.secondary-button,
+.text-link {
+  transition:
+    color 0.25s ease,
+    background-color 0.25s ease,
+    border-color 0.25s ease,
+    box-shadow 0.25s ease,
+    transform 0.25s ease;
+}
+
+button:active,
+.primary-button:active,
+.secondary-button:active {
+  transform: scale(0.97);
+}
+
+/* Cart */
+.cart-item {
+  animation: babySlideUp 0.4s ease both;
+}
+
+.cart-empty > svg {
+  animation: babyFadeIn 0.8s ease both;
+}
+
+/* Checkout */
+.checkout-title {
+  animation: babySlideUp 0.6s ease both;
+}
+
+.checkout-form,
+.checkout-summary {
+  animation: babyPageEnter 0.7s ease both;
+}
+
+.checkout-summary {
+  animation-delay: 0.12s;
+}
+
+.checkout-item {
+  animation: babyFadeIn 0.4s ease both;
+}
+
+.checkout-success-card {
+  animation: babyPageEnter 0.8s ease both;
+}
+
+/* Form interactions */
+.checkout-form input,
+.checkout-form textarea {
+  transition: border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.checkout-form input:focus,
+.checkout-form textarea:focus {
+  box-shadow: 0 0 0 3px rgba(49, 91, 70, 0.12);
+}
+
+/* Footer */
+.footer-column a {
+  transition: color 0.25s ease, transform 0.25s ease;
+}
+
+.footer-column a:hover {
+  transform: translateX(4px);
+}
+
+/* Product card interactions */
+.animated-product-card {
+  animation: babyProductFade 0.65s ease both;
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.animated-product-card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 14px 35px rgba(80, 50, 50, 0.09);
+}
+
+.product-image-link {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.product-image-link img {
+  display: block;
+  width: 100%;
+  transition: transform 0.55s ease;
+}
+
+.animated-product-card:hover .product-image-link img {
+  transform: scale(1.06);
+}
+
+.product-name-link {
+  display: block;
+  padding: 0;
+  border: none;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  font-weight: inherit;
+  text-align: left;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.product-name-link:hover {
+  color: #234634;
+}
+
+@keyframes babyProductFade {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Checkout animations */
+.checkout-page {
+  animation: babyFadeIn 0.6s ease both;
+}
+
+.checkout-header {
+  animation: babySlideUp 0.5s ease both;
+}
+
+.checkout-back {
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.checkout-back:hover {
+  color: var(--bh-forest-dark);
+  transform: translateX(-4px);
+}
+
+.checkout-title h2 {
+  animation: babySlideUp 0.65s ease both;
+}
+
+.checkout-title p {
+  animation: babyFadeIn 0.9s ease both;
+}
+
+.checkout-layout {
+  animation: babyPageEnter 0.7s ease both;
+}
+
+.checkout-form {
+  animation: babySlideUp 0.7s ease both;
+}
+
+.checkout-summary {
+  animation: babySlideUp 0.8s ease both;
+  animation-delay: 0.1s;
+}
+
+.checkout-form h3,
+.checkout-summary h3 {
+  transition: color 0.3s ease;
+}
+
+.checkout-form:hover h3,
+.checkout-summary:hover h3 {
+  color: var(--bh-forest-dark);
+}
+
+.checkout-form label {
+  transition: color 0.25s ease;
+}
+
+.checkout-form input,
+.checkout-form textarea {
+  transition:
+    border-color 0.3s ease,
+    box-shadow 0.3s ease,
+    background 0.3s ease,
+    transform 0.3s ease;
+}
+
+.checkout-form input:focus,
+.checkout-form textarea:focus {
+  border-color: var(--bh-forest);
+  background: white;
+  box-shadow: 0 0 0 4px rgba(49, 91, 70, 0.13);
+  transform: translateY(-1px);
+}
+
+.checkout-item {
+  transition: background 0.3s ease, padding 0.3s ease;
+}
+
+.checkout-item:hover {
+  background: #f8f6f0;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.checkout-quantity button {
+  transition:
+    background 0.25s ease,
+    color 0.25s ease,
+    transform 0.25s ease;
+}
+
+.checkout-quantity button:hover {
+  background: var(--bh-sage-light);
+  color: var(--bh-forest-dark);
+  transform: scale(1.1);
+}
+
+.checkout-quantity .checkout-remove:hover {
+  background: #f1f0e9;
+  color: #54745c;
+}
+
+.checkout-total-row,
+.checkout-grand-total {
+  transition: color 0.3s ease;
+}
+
+.checkout-grand-total strong {
+  color: var(--bh-forest-dark);
+}
+
+.checkout-place-order {
+  position: relative;
+  overflow: hidden;
+  transition:
+    background 0.3s ease,
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.checkout-place-order:hover {
+  background: var(--bh-forest-dark);
+  transform: translateY(-3px);
+  box-shadow: 0 9px 22px rgba(199, 119, 136, 0.22);
+}
+
+.checkout-place-order:active {
+  transform: scale(0.98);
+}
+
+.checkout-empty {
+  animation: babyPageEnter 0.7s ease both;
+}
+
+.checkout-empty > svg {
+  animation: babyFadeIn 1s ease both;
+}
+
+.checkout-empty .checkout-button {
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.checkout-empty .checkout-button:hover {
+  transform: translateY(-3px);
+  background: var(--bh-forest-dark);
+}
+
+@media (max-width: 750px) {
+  .checkout-layout {
+    gap: 20px;
+  }
+
+  .checkout-form,
+  .checkout-summary {
+    animation-duration: 0.6s;
+  }
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+/* =====================================
+   BABYHUNT - PREMIUM ANIMATION UPGRADE
+===================================== */
+
+/* Smooth page movement */
+html {
+  scroll-behavior: smooth;
+}
+
+@keyframes babyFloat {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-9px);
+  }
+}
+
+@keyframes babySoftGlow {
+  0%, 100% {
+    box-shadow: 0 5px 18px rgba(217, 141, 156, 0.08);
+  }
+  50% {
+    box-shadow: 0 9px 28px rgba(217, 141, 156, 0.18);
+  }
+}
+
+@keyframes babyShine {
+  from {
+    left: -100%;
+  }
+  to {
+    left: 150%;
+  }
+}
+
+/* Hero floating effect */
+.hero-bubble {
+  animation:
+    babyFadeIn 1.2s ease both,
+    babyFloat 4s ease-in-out 1.2s infinite;
+}
+
+/* Category card premium hover */
+.category-card {
+  transition:
+    transform 0.4s cubic-bezier(0.2, 0.8, 0.2, 1),
+    box-shadow 0.4s ease;
+}
+
+.category-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 32px rgba(80, 50, 50, 0.10);
+}
+
+/* Product image smooth movement */
+.animated-product-card .product-image-link img {
+  transition: transform 0.7s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.animated-product-card:hover .product-image-link img {
+  transform: scale(1.08);
+}
+
+/* Product card hover */
+.animated-product-card {
+  transition:
+    transform 0.4s cubic-bezier(0.2, 0.8, 0.2, 1),
+    box-shadow 0.4s ease;
+}
+
+/* Button shine effect */
+.primary-button,
+.secondary-button,
+.checkout-place-order,
+.product-add-button {
+  position: relative;
+  overflow: hidden;
+}
+
+.primary-button::after,
+.checkout-place-order::after,
+.product-add-button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 45%;
+  height: 100%;
+  background: linear-gradient(
+    110deg,
+    transparent,
+    rgba(255, 255, 255, 0.35),
+    transparent
+  );
+  transform: skewX(-20deg);
+}
+
+.primary-button:hover::after,
+.checkout-place-order:hover::after,
+.product-add-button:hover::after {
+  animation: babyShine 0.8s ease;
+}
+
+/* Benefits hover */
+.benefit {
+  transition: transform 0.35s ease;
+}
+
+.benefit:hover {
+  transform: translateY(-5px);
+}
+
+/* Newsletter focus */
+.newsletter input {
+  transition:
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.newsletter input:focus {
+  border-color: var(--bh-forest);
+  box-shadow: 0 0 0 4px rgba(49, 91, 70, 0.12);
+}
+
+/* Cart drawer entrance */
+.cart-drawer {
+  will-change: transform;
+}
+
+.cart-item {
+  transition:
+    background 0.3s ease,
+    transform 0.3s ease;
+}
+
+.cart-item:hover {
+  transform: translateX(-3px);
+}
+
+/* Navigation underline */
+.nav a {
+  position: relative;
+}
+
+.nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0;
+  height: 2px;
+  background: var(--bh-forest-dark);
+  transition: width 0.3s ease;
+}
+
+.nav a:hover::after {
+  width: 100%;
+}
+
+/* Accessibility and mobile performance */
+@media (max-width: 750px) {
+  .animated-product-card:hover,
+  .category-card:hover {
+    transform: translateY(-3px);
+  }
+
+  .hero-bubble {
+    animation: babyFadeIn 1s ease both;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .hero-bubble {
+    animation: none;
+  }
+}
