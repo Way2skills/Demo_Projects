@@ -1,26 +1,110 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-warm-ivory: #F5F0E8;
+  --color-soft-beige: #D8C8B2;
+  --color-natural-walnut: #76533D;
+  --color-espresso: #30251F;
+  --color-deep-black: #171513;
+  --color-off-white: #FCFAF6;
+  --color-bronze: #C5A880;
+  --color-bronze-light: #E2D3BE;
+  --color-bronze-dark: #8C6D46;
+
+  --font-serif: "Cormorant Garamond", "Playfair Display", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+:root {
+  --background: #171513;
+  --foreground: #FCFAF6;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: #171513;
+  color: #FCFAF6;
+  font-family: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: #171513;
+  color: #FCFAF6;
+  font-family: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+  overflow-x: hidden;
+}
+
+/* Headings use the editorial serif */
+h1, h2, h3, h4, .font-serif {
+  font-family: "Cormorant Garamond", "Playfair Display", Georgia, serif;
+  letter-spacing: -0.01em;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #171513;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #76533D;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #C5A880;
+}
+
+/* Subtle architectural grid pattern */
+.architectural-grid {
+  background-image: 
+    linear-gradient(to right, rgba(216, 200, 178, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(216, 200, 178, 0.04) 1px, transparent 1px);
+  background-size: 64px 64px;
+}
+
+/* Each image family keeps a distinct architectural silhouette. */
+.editorial-image {
+  border-radius: 2.25rem 0.35rem 2.25rem 0.35rem;
+  clip-path: inset(0 round 2.25rem 0.35rem 2.25rem 0.35rem);
+}
+
+.editorial-image img {
+  transition: transform 1.15s cubic-bezier(0.2, 0.75, 0.2, 1), filter 0.8s ease;
+}
+
+.page-visual-services .editorial-image:first-child { border-radius: 0.35rem 2.25rem 0.35rem 2.25rem; clip-path: inset(0 round 0.35rem 2.25rem 0.35rem 2.25rem); }
+.page-visual-projects .editorial-image:first-child { border-radius: 50% 0.35rem 50% 0.35rem; clip-path: inset(0 round 50% 0.35rem 50% 0.35rem); }
+.page-visual-contact .editorial-image:first-child { border-radius: 2.25rem 2.25rem 0.35rem 0.35rem; clip-path: inset(0 round 2.25rem 2.25rem 0.35rem 0.35rem); }
+
+.editorial-image-wide { border-radius: 0.35rem 3rem 0.35rem 3rem; clip-path: inset(0 round 0.35rem 3rem 0.35rem 3rem); }
+.editorial-image-soft { border-radius: 2.5rem 0.35rem 0.35rem 2.5rem; clip-path: inset(0 round 2.5rem 0.35rem 0.35rem 2.5rem); }
+.editorial-image-portrait { border-radius: 0.35rem 1.75rem 0.35rem 1.75rem; clip-path: inset(0 round 0.35rem 1.75rem 0.35rem 1.75rem); }
+.editorial-image-project { border-radius: 1.5rem 0.35rem 1.5rem 0.35rem; clip-path: inset(0 round 1.5rem 0.35rem 1.5rem 0.35rem); }
+.editorial-image-gallery { border-radius: 2.5rem 0.35rem 0.35rem 0.35rem; clip-path: inset(0 round 2.5rem 0.35rem 0.35rem 0.35rem); }
+.editorial-image-gallery-alt { border-radius: 0.35rem 0.35rem 2.5rem 0.35rem; clip-path: inset(0 round 0.35rem 0.35rem 2.5rem 0.35rem); }
+
+.group:hover .editorial-image img,
+.editorial-image:hover img {
+  transform: scale(1.045);
+}
+
+@media (max-width: 639px) {
+  .editorial-image {
+    border-radius: 1.35rem 0.2rem 1.35rem 0.2rem;
+    clip-path: inset(0 round 1.35rem 0.2rem 1.35rem 0.2rem);
+  }
+
+  .editorial-image-wide, .editorial-image-soft, .editorial-image-portrait, .editorial-image-project, .editorial-image-gallery, .editorial-image-gallery-alt {
+    border-radius: 1.35rem 0.2rem 1.35rem 0.2rem;
+    clip-path: inset(0 round 1.35rem 0.2rem 1.35rem 0.2rem);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .editorial-image img { transition: none; }
 }
