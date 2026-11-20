@@ -1,0 +1,466 @@
+.about-page {
+  background: #F4FAF9;
+}
+
+.about-page .about-page-content.about-premium {
+  max-width: 1320px;
+  padding: clamp(42px, 6vw, 76px) 34px 72px;
+}
+
+.about-page .about-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1.12fr) minmax(320px, .88fr);
+  align-items: center;
+  gap: clamp(30px, 5vw, 68px);
+  margin-bottom: 52px;
+}
+
+.about-page .about-hero-copy {
+  min-width: 0;
+}
+
+.about-page .about-page-heading {
+  margin: 0 0 21px;
+  text-align: left;
+}
+
+.about-page .about-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  color: #0F766E;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1.8px;
+}
+
+.about-page .about-eyebrow::before {
+  width: 23px;
+  height: 2px;
+  background: #D6AD55;
+  content: "";
+}
+
+.about-page .about-page-heading h1 {
+  margin: 17px 0 0;
+  color: #103F3B;
+  font: 800 clamp(36px, 4.5vw, 54px)/1.1 Manrope, sans-serif;
+  letter-spacing: -2px;
+}
+
+.about-page .about-page-heading h2 {
+  margin: 12px 0 0;
+  color: #0F766E;
+  font: 700 clamp(20px, 2.4vw, 27px)/1.35 Manrope, sans-serif;
+  letter-spacing: -.5px;
+}
+
+.about-page .about-page-description {
+  max-width: 700px;
+  margin: 0;
+  color: #475569;
+  font-size: 15px;
+  line-height: 1.85;
+  text-align: left;
+}
+
+.about-page .about-page-description p {
+  margin: 0;
+}
+
+.about-page .about-page-description p + p {
+  margin-top: 15px;
+}
+
+.about-page .about-milestone-panel {
+  position: relative;
+  isolation: isolate;
+  min-width: 0;
+  min-height: 340px;
+  overflow: hidden;
+  padding: 30px;
+  border: 1px solid rgba(255, 255, 255, .16);
+  border-radius: 20px;
+  color: #FFFFFF;
+  background:
+    radial-gradient(ellipse at 90% 8%, rgba(35, 143, 132, .48), transparent 39%),
+    linear-gradient(145deg, #0B3F3B, #115E59 65%, #0E514D);
+  box-shadow: 0 22px 50px rgba(17, 94, 89, .17);
+}
+
+.about-page .about-milestone-panel::before {
+  position: absolute;
+  z-index: -1;
+  right: -88px;
+  bottom: -155px;
+  width: 330px;
+  height: 330px;
+  border: 1px solid rgba(220, 195, 125, .24);
+  border-radius: 50%;
+  box-shadow:
+    0 0 0 24px rgba(220, 195, 125, .05),
+    0 0 0 49px rgba(255, 255, 255, .035);
+  content: "";
+}
+
+.about-page .about-milestone-kicker {
+  color: #E5CF91;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1.8px;
+}
+
+.about-page .about-milestones {
+  display: grid;
+  gap: 23px;
+  margin-top: 31px;
+}
+
+.about-page .about-milestone {
+  display: grid;
+  grid-template-columns: 102px minmax(0, 1fr);
+  align-items: center;
+  gap: 18px;
+  padding-bottom: 22px;
+  border-bottom: 1px solid rgba(255, 255, 255, .17);
+}
+
+.about-page .about-milestone:last-child {
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+
+.about-page .about-milestone > strong {
+  color: #FFFFFF;
+  font: 800 clamp(32px, 4vw, 42px)/1 Manrope, sans-serif;
+  letter-spacing: -1.5px;
+}
+
+.about-page .about-milestone > div {
+  min-width: 0;
+}
+
+.about-page .about-milestone > div > span {
+  display: block;
+  color: #FFFFFF;
+  font: 700 14px/1.4 Manrope, sans-serif;
+}
+
+.about-page .about-milestone p {
+  margin: 5px 0 0;
+  color: rgba(245, 250, 249, .78);
+  font-size: 12px;
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+}
+
+.about-page .about-panel-mark {
+  position: absolute;
+  top: 29px;
+  right: 29px;
+  display: flex;
+  gap: 5px;
+  align-items: flex-end;
+  height: 28px;
+}
+
+.about-page .about-panel-mark i {
+  width: 3px;
+  height: 14px;
+  border-radius: 2px;
+  background: rgba(229, 207, 145, .72);
+}
+
+.about-page .about-panel-mark i:nth-child(2) {
+  height: 24px;
+}
+
+.about-page .about-panel-mark i:nth-child(3) {
+  height: 19px;
+}
+
+.about-page .about-recognition-heading {
+  margin: 0 0 20px;
+}
+
+.about-page .about-recognition-heading .about-eyebrow {
+  color: #115E59;
+}
+
+.about-page .about-recognition-heading h2 {
+  margin: 8px 0 0;
+  color: #103F3B;
+  font: 700 clamp(20px, 2.5vw, 27px)/1.3 Manrope, sans-serif;
+  letter-spacing: -.5px;
+}
+
+.about-page .about-recognition {
+  display: grid;
+  max-width: none;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+.about-page .about-recognition-item {
+  display: flex;
+  min-width: 0;
+  min-height: 112px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 15px;
+  padding: 20px;
+  border: 1px solid #E0EBE9;
+  border-radius: 15px;
+  background: #FFFFFF;
+  text-align: left;
+  box-shadow: 0 8px 24px rgba(17, 94, 89, .055);
+  transition: transform .2s ease, border-color .2s ease, box-shadow .2s ease;
+}
+
+.about-page .about-recognition-item:hover {
+  transform: translateY(-3px);
+  border-color: rgba(15, 118, 110, .4);
+  box-shadow: 0 13px 28px rgba(17, 94, 89, .1);
+}
+
+.about-page .about-recognition-icon {
+  display: grid;
+  width: 45px;
+  height: 45px;
+  flex: 0 0 45px;
+  place-items: center;
+  border: 1px solid rgba(15, 118, 110, .14);
+  border-radius: 13px;
+  color: #0F766E;
+  background: #F0F8F7;
+}
+
+.about-page .about-recognition-item:first-child .about-recognition-icon {
+  color: #4285F4;
+  background: #F3F7FF;
+}
+
+.about-page .about-recognition-copy {
+  display: grid;
+  min-width: 0;
+  gap: 5px;
+}
+
+.about-page .about-recognition-copy strong {
+  color: #173F3C;
+  font: 700 14px/1.35 Manrope, sans-serif;
+  overflow-wrap: anywhere;
+}
+
+.about-page .about-recognition-copy > span {
+  color: #52646E;
+  font-size: 12px;
+  line-height: 1.45;
+  overflow-wrap: anywhere;
+}
+
+.about-page .about-statistics {
+  display: grid;
+  max-width: none;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  margin: 28px 0 0;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, .12);
+  border-radius: 18px;
+  background:
+    radial-gradient(ellipse at 90% 0%, rgba(28, 132, 122, .34), transparent 42%),
+    linear-gradient(120deg, #0B3F3B, #115E59);
+  box-shadow: 0 16px 38px rgba(17, 94, 89, .14);
+}
+
+.about-page .about-statistic {
+  display: flex;
+  min-width: 0;
+  min-height: 172px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 23px 15px;
+  border-right: 1px solid rgba(255, 255, 255, .17);
+  text-align: center;
+}
+
+.about-page .about-statistic:last-child {
+  border-right: 0;
+}
+
+.about-page .about-statistic-icon {
+  margin-bottom: 3px;
+  color: #E5CF91;
+}
+
+.about-page .about-statistic strong {
+  color: #FFFFFF;
+  font: 800 clamp(28px, 3.2vw, 38px)/1.1 Manrope, sans-serif;
+  letter-spacing: -.8px;
+}
+
+.about-page .about-statistic > span {
+  color: rgba(245, 250, 249, .82);
+  font-size: 12px;
+  line-height: 1.45;
+}
+
+@media (max-width: 900px) {
+  .about-page .about-page-content.about-premium {
+    padding-right: 26px;
+    padding-left: 26px;
+  }
+
+  .about-page .about-hero {
+    grid-template-columns: minmax(0, 1.05fr) minmax(285px, .95fr);
+    gap: 28px;
+  }
+
+  .about-page .about-milestone-panel {
+    min-height: 320px;
+    padding: 25px;
+  }
+
+  .about-page .about-milestone {
+    grid-template-columns: 85px minmax(0, 1fr);
+    gap: 13px;
+  }
+
+  .about-page .about-recognition {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .about-page .about-statistic {
+    padding-inline: 10px;
+  }
+}
+
+@media (max-width: 680px) {
+  .about-page .about-page-content.about-premium {
+    padding: 42px 20px 52px;
+  }
+
+  .about-page .about-hero {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 26px;
+    margin-bottom: 38px;
+  }
+
+  .about-page .about-page-heading {
+    margin-bottom: 17px;
+  }
+
+  .about-page .about-page-heading h1 {
+    font-size: clamp(34px, 9vw, 44px);
+    letter-spacing: -1.5px;
+  }
+
+  .about-page .about-page-heading h2 {
+    font-size: clamp(20px, 5vw, 24px);
+  }
+
+  .about-page .about-page-description {
+    font-size: 14px;
+  }
+
+  .about-page .about-milestone-panel {
+    min-height: 0;
+    padding: 23px;
+    border-radius: 17px;
+  }
+
+  .about-page .about-milestones {
+    gap: 18px;
+    margin-top: 24px;
+  }
+
+  .about-page .about-milestone {
+    grid-template-columns: 82px minmax(0, 1fr);
+    padding-bottom: 18px;
+  }
+
+  .about-page .about-recognition-heading {
+    margin-bottom: 15px;
+  }
+
+  .about-page .about-recognition {
+    gap: 10px;
+  }
+
+  .about-page .about-recognition-item {
+    min-height: 98px;
+    gap: 11px;
+    padding: 14px;
+  }
+
+  .about-page .about-recognition-icon {
+    width: 39px;
+    height: 39px;
+    flex-basis: 39px;
+  }
+
+  .about-page .about-recognition-copy strong {
+    font-size: 13px;
+  }
+
+  .about-page .about-statistics {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    margin-top: 20px;
+    border-radius: 15px;
+  }
+
+  .about-page .about-statistic {
+    min-height: 145px;
+    border-bottom: 1px solid rgba(255, 255, 255, .17);
+  }
+
+  .about-page .about-statistic:nth-child(odd) {
+    border-right: 1px solid rgba(255, 255, 255, .17);
+  }
+
+  .about-page .about-statistic:nth-child(even) {
+    border-right: 0;
+  }
+
+  .about-page .about-statistic:nth-last-child(-n+2) {
+    border-bottom: 0;
+  }
+}
+
+@media (max-width: 400px) {
+  .about-page .about-page-content.about-premium {
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+
+  .about-page .about-recognition-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 13px;
+  }
+
+  .about-page .about-statistic {
+    min-height: 134px;
+    padding-inline: 7px;
+  }
+
+  .about-page .about-statistic > span {
+    font-size: 11px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .about-page .about-recognition-item {
+    transition: none;
+  }
+}

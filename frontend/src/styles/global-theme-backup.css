@@ -1,0 +1,371 @@
+
+/* =====================================================
+   DECODE INSTITUTION — PREMIUM BLACK & GOLD THEME
+   Global website colour override
+===================================================== */
+
+:root {
+  --navy: #171717;
+  --blue: #B88D36;
+  --gold: #D6AD55;
+  --gold-dark: #A77B27;
+
+  --line: #E7DFCF;
+  --muted: #77736B;
+
+  --black: #171717;
+  --white: #FFFFFF;
+  --ivory: #F5F3EE;
+  --surface: #FFFFFF;
+
+  --text-primary: #22201C;
+  --text-secondary: #77736B;
+
+  --primary: #171717;
+  --primary-hover: #303030;
+  --accent: #D6AD55;
+  --accent-hover: #B88D36;
+
+  --shadow-premium: 0 12px 35px rgba(23, 23, 23, 0.09);
+}
+
+/* GLOBAL */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--ivory);
+  color: var(--text-primary);
+}
+
+::selection {
+  background: var(--gold);
+  color: var(--black);
+}
+
+a {
+  transition: color 0.25s ease;
+}
+
+/* HEADER AND NAVIGATION */
+
+header,
+.site-header,
+.main-header,
+.navbar {
+  background: var(--black);
+  color: var(--white);
+  border-bottom: 1px solid rgba(214, 173, 85, 0.3);
+}
+
+header a,
+.site-header a,
+.main-header a,
+.navbar a {
+  color: var(--white);
+}
+
+header a:hover,
+.site-header a:hover,
+.main-header a:hover,
+.navbar a:hover {
+  color: var(--gold);
+}
+
+/* ACTIVE NAVIGATION */
+
+header a.active,
+.site-header a.active,
+.navbar a.active {
+  color: var(--gold);
+}
+
+/* PAGE BACKGROUNDS */
+
+main {
+  background-color: var(--ivory);
+}
+
+section {
+  scroll-margin-top: 90px;
+}
+
+.section-light,
+.light-section {
+  background: var(--ivory);
+}
+
+.section-dark,
+.dark-section {
+  background: var(--black);
+  color: var(--white);
+}
+
+/* HEADINGS */
+
+h1,
+h2,
+h3,
+h4 {
+  color: var(--black);
+}
+
+.section-dark h1,
+.section-dark h2,
+.section-dark h3,
+.dark-section h1,
+.dark-section h2,
+.dark-section h3 {
+  color: var(--gold);
+}
+
+/* PRIMARY BUTTONS */
+
+button,
+.btn,
+.button,
+.primary-btn,
+.btn-primary {
+  transition: all 0.25s ease;
+}
+
+.primary-btn,
+.btn-primary,
+.button-primary,
+button.primary {
+  background: var(--gold);
+  color: var(--black);
+  border: 1px solid var(--gold);
+  font-weight: 700;
+}
+
+.primary-btn:hover,
+.btn-primary:hover,
+.button-primary:hover,
+button.primary:hover {
+  background: var(--gold-dark);
+  color: var(--white);
+  border-color: var(--gold-dark);
+  transform: translateY(-2px);
+}
+
+/* SECONDARY BUTTONS */
+
+.secondary-btn,
+.btn-secondary,
+.button-secondary {
+  background: var(--black);
+  color: var(--gold);
+  border: 1px solid var(--gold);
+}
+
+.secondary-btn:hover,
+.btn-secondary:hover,
+.button-secondary:hover {
+  background: var(--gold);
+  color: var(--black);
+}
+
+/* CARDS */
+
+.card,
+.course-card,
+.trainer-card,
+.testimonial-card,
+.gallery-card,
+.feature-card,
+.internship-card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow-premium);
+}
+
+.card:hover,
+.course-card:hover,
+.trainer-card:hover,
+.feature-card:hover {
+  border-color: var(--gold);
+}
+
+/* ICONS AND HIGHLIGHTS */
+
+.icon,
+.highlight,
+.accent-text,
+.gold-text {
+  color: var(--gold-dark);
+}
+
+.badge,
+.tag,
+.label-highlight {
+  background: #F6EBD1;
+  color: #785719;
+}
+
+/* FORMS */
+
+input,
+textarea,
+select {
+  background: #FFFFFF;
+  color: var(--black);
+  border: 1px solid var(--line);
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  border-color: var(--gold);
+  box-shadow: 0 0 0 3px rgba(214, 173, 85, 0.17);
+}
+
+/* LINKS */
+
+.content-link,
+.text-link {
+  color: var(--gold-dark);
+}
+
+.content-link:hover,
+.text-link:hover {
+  color: var(--black);
+}
+
+/* TABLES */
+
+table {
+  border-color: var(--line);
+}
+
+th {
+  background: var(--black);
+  color: var(--gold);
+}
+
+td {
+  color: var(--text-primary);
+}
+
+/* FOOTER */
+
+.site-footer {
+  background: var(--black);
+  color: #E8E3D9;
+  border-top: 3px solid var(--gold);
+}
+
+.site-footer h2,
+.site-footer h3,
+.site-footer h4 {
+  color: var(--gold);
+}
+
+.site-footer p,
+.site-footer li,
+.site-footer .footer-description {
+  color: #C6C0B5;
+}
+
+.site-footer a {
+  color: #E8E3D9;
+}
+
+.site-footer a:hover {
+  color: var(--gold);
+}
+
+.site-footer .footer-socials a {
+  border: 1px solid rgba(214, 173, 85, 0.4);
+  color: var(--gold);
+}
+
+.site-footer .footer-socials a:hover {
+  background: var(--gold);
+  color: var(--black);
+}
+
+.site-footer .footer-bottom {
+  border-top: 1px solid rgba(214, 173, 85, 0.25);
+}
+
+.site-footer .footer-credit {
+  color: var(--gold);
+}
+
+/* PRIVACY POLICY AND LEGAL PAGES */
+
+.legal-page {
+  background: var(--ivory);
+}
+
+.legal-container {
+  background: #FFFFFF;
+  border-color: var(--line);
+}
+
+.legal-container h1,
+.legal-container h2 {
+  color: var(--black);
+}
+
+.legal-container a {
+  color: var(--gold-dark);
+}
+
+/* ADMIN AND DASHBOARD ELEMENTS */
+
+.admin-sidebar,
+.dashboard-sidebar {
+  background: var(--black);
+  color: var(--white);
+}
+
+.admin-sidebar a,
+.dashboard-sidebar a {
+  color: #E8E3D9;
+}
+
+.admin-sidebar a.active,
+.dashboard-sidebar a.active {
+  color: var(--gold);
+  background: rgba(214, 173, 85, 0.12);
+}
+
+.dashboard-card,
+.admin-card {
+  background: #FFFFFF;
+  border: 1px solid var(--line);
+}
+
+.dashboard-card:hover,
+.admin-card:hover {
+  border-color: var(--gold);
+}
+
+/* FOCUS ACCESSIBILITY */
+
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 3px;
+}
+
+/* MOBILE */
+
+@media (max-width: 760px) {
+  .site-footer {
+    border-top-width: 2px;
+  }
+
+  .primary-btn,
+  .btn-primary {
+    min-height: 42px;
+  }
+}
