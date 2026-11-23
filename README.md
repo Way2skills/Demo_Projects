@@ -17,6 +17,7 @@ A unified repository containing demo web projects, organized into dedicated bran
 | 7 | **Levy Fitness Center** | [`levyfitnesscenter`](https://github.com/Way2skills/Demo_Projects/tree/levyfitnesscenter) | 🔗 [levyfitnesscenter.vercel.app](https://levyfitnesscenter.vercel.app) | Next.js | [NavaneethaSelvam/LevyFitnessCenter](https://github.com/NavaneethaSelvam/LevyFitnessCenter) |
 | 8 | **Nool & Zari** | [`nool-and-zari`](https://github.com/Way2skills/Demo_Projects/tree/nool-and-zari) | 🔗 [nool-and-zari-sigma.vercel.app](https://nool-and-zari-sigma.vercel.app) | Next.js | [Nithesh783/nool-and-zari](https://github.com/Nithesh783/nool-and-zari) |
 | 9 | **BIAA Beauty** | [`biaabeauty`](https://github.com/Way2skills/Demo_Projects/tree/biaabeauty) | 🔗 [biaabeauty-durozen.netlify.app](https://biaabeauty-durozen.netlify.app/) | Vite + React | [JeevakumaranS/BiaaBeauty](https://github.com/JeevakumaranS/BiaaBeauty) |
+| 10 | **Decode Institution** | [`decode-institution`](https://github.com/Way2skills/Demo_Projects/tree/decode-institution) | 🔗 [decode-institution.vercel.app](https://decode-institution.vercel.app) | Vite + React | [manojkumarsr30-code/Decode_Institution](https://github.com/manojkumarsr30-code/Decode_Institution) |
 
 ---
 
@@ -28,8 +29,8 @@ To work on or run any project locally:
 # 1. Fetch all latest branches
 git fetch --all
 
-# 2. Switch to the desired project branch (e.g. nool-and-zari)
-git checkout nool-and-zari
+# 2. Switch to the desired project branch (e.g. decode-institution)
+git checkout decode-institution
 
 # 3. Install dependencies and start the dev server
 npm install
