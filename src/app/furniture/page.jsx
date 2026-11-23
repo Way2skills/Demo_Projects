@@ -1,7 +1,7 @@
 
 "use client";
 
-import { useState, useRef, useEffect } from "react";
+import { useState, useRef, useEffect, Suspense } from "react";
 import { useSearchParams } from "next/navigation";
 import Link from "next/link";
 import livingRoomCategories from "@/data/livingRoomData";
@@ -299,8 +299,8 @@ function SubCategoryCard({ item, activeCategory, index }) {
   );
 }
 
-// MAIN FURNITURE PAGE
-export default function FurniturePage() {
+// MAIN FURNITURE CONTENT
+function FurnitureContent() {
   const searchParams = useSearchParams();
 
   const [activeCategory, setActiveCategory] = useState("living-room");
@@ -492,6 +492,14 @@ export default function FurniturePage() {
         </div>
       </section>
     </main>
+  );
+}
+
+export default function FurniturePage() {
+  return (
+    <Suspense fallback={<div className="min-h-screen bg-[#FDFBF7] flex items-center justify-center">Loading...</div>}>
+      <FurnitureContent />
+    </Suspense>
   );
 }
 
