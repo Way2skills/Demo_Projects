@@ -18,6 +18,7 @@ A unified repository containing demo web projects, organized into dedicated bran
 | 8 | **Nool & Zari** | [`nool-and-zari`](https://github.com/Way2skills/Demo_Projects/tree/nool-and-zari) | 🔗 [nool-and-zari-sigma.vercel.app](https://nool-and-zari-sigma.vercel.app) | Next.js | [Nithesh783/nool-and-zari](https://github.com/Nithesh783/nool-and-zari) |
 | 9 | **BIAA Beauty** | [`biaabeauty`](https://github.com/Way2skills/Demo_Projects/tree/biaabeauty) | 🔗 [biaabeauty-durozen.netlify.app](https://biaabeauty-durozen.netlify.app/) | Vite + React | [JeevakumaranS/BiaaBeauty](https://github.com/JeevakumaranS/BiaaBeauty) |
 | 10 | **Decode Institution** | [`decode-institution`](https://github.com/Way2skills/Demo_Projects/tree/decode-institution) | 🔗 [decode-institution.vercel.app](https://decode-institution.vercel.app) | Vite + React | [manojkumarsr30-code/Decode_Institution](https://github.com/manojkumarsr30-code/Decode_Institution) |
+| 11 | **Tile Showroom** | [`tile-showroom`](https://github.com/Way2skills/Demo_Projects/tree/tile-showroom) | 🔗 [tile-showroom-livid.vercel.app](https://tile-showroom-livid.vercel.app) | Next.js | [manojkumarsr30-code/Tile-Showroom](https://github.com/manojkumarsr30-code/Tile-Showroom) |
 
 ---
 
@@ -29,8 +30,8 @@ To work on or run any project locally:
 # 1. Fetch all latest branches
 git fetch --all
 
-# 2. Switch to the desired project branch (e.g. decode-institution)
-git checkout decode-institution
+# 2. Switch to the desired project branch (e.g. tile-showroom)
+git checkout tile-showroom
 
 # 3. Install dependencies and start the dev server
 npm install
