@@ -2,7 +2,7 @@
 
 export default function BrandMark({ className = "" }: { className?: string }) {
   return (
-    <svg aria-label="Shinewood brand mark" role="img" viewBox="0 0 44 44" className={className} fill="none">
+    <svg aria-label="Shinewood brand mark" role="img" viewBox="0 0 44 44" width="40" height="40" className={`w-9 h-9 sm:w-10 sm:h-10 shrink-0 ${className}`} fill="none">
       <path d="M8 36V14.5L22 7l14 7.5V36" stroke="currentColor" strokeWidth="1.6" />
       <path d="M14 36V18l8-4 8 4v18" stroke="currentColor" strokeWidth="1.1" opacity=".75" />
       <path d="m12 29 10-6 10 6M12 34l10-6 10 6" stroke="currentColor" strokeWidth="1" opacity=".58" />
